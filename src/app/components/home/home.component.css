@@ -1,6 +1,6 @@
 .container {
     background-image: url(../../../assets/452627285_1005369774927625_4313157992438060989_n.jpg);
-    background-size: cover;
+    background-size: contain;
     /* margin-top: 16rem; */
     /* display: flex; */
     /* flex-direction: column;

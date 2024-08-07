@@ -1,0 +1,9 @@
+.icons{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  
+  svg{
+    width:100px;
+    padding:30px;
+  }

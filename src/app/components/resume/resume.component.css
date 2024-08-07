@@ -1,0 +1,29 @@
+.work-text{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    margin:20px;
+    padding:5px;
+  }
+
+.col-span-3{
+    margin: 20px;
+  }
+
+.mb-4 {
+    border: 2px solid;
+    padding:10px;
+    /* margin: 10px; */
+  }
+
+  .mb-5{
+    padding: 10px;
+    border: 2px solid;
+  }
+
+.experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

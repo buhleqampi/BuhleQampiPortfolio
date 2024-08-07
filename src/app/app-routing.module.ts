@@ -9,10 +9,12 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TechstackComponent } from './components/techstack/techstack.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo:'home' , pathMatch: 'full'},
+  {path: '', redirectTo:'app' , pathMatch: 'full'},
+  {path : 'app', component: AppComponent},
   {path : 'home', component: HomeComponent},
   {path : 'about', component: AboutComponent},
   {path : 'resume', component: ResumeComponent},
@@ -22,8 +24,6 @@ const routes: Routes = [
    {path : 'tech', component: TechstackComponent},
    {path : 'projects', component: ProjectsComponent},
    {path : 'navbar', component: NavbarComponent}
-
-
 ];
 
 @NgModule({
