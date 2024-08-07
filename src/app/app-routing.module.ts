@@ -12,7 +12,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo:'home' , pathMatch: 'full'}
+  {path: '', redirectTo:'home' , pathMatch: 'full'},
   {path : 'home', component: HomeComponent},
   {path : 'about', component: AboutComponent},
   {path : 'resume', component: ResumeComponent},
@@ -20,7 +20,9 @@ const routes: Routes = [
   {path : 'contact', component: ContactComponent},
   {path : 'navbar', component: NavbarComponent}, 
    {path : 'tech', component: TechstackComponent},
-   {path : 'projects', component: ProjectsComponent}
+   {path : 'projects', component: ProjectsComponent},
+   {path : 'navbar', component: NavbarComponent}
+
 
 ];
 
