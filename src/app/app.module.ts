@@ -11,6 +11,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TechstackComponent } from './components/techstack/techstack.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -24,7 +25,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     ContactComponent,
     NavbarComponent,
     TechstackComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    FooterComponent
  
   ],
   imports: [

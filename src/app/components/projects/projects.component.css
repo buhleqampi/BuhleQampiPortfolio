@@ -1,0 +1,19 @@
+.projects-text{
+    display: flex;
+    flex-direction: start;
+  }
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#shukuma{
+    width: 360px;
+    size-adjust: 60%;
+    height: 180px;
+}
+
