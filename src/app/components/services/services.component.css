@@ -1,0 +1,12 @@
+.services-text{
+    display: flex;
+    flex-direction: start;
+  }
+
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
