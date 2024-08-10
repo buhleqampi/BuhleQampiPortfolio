@@ -22,3 +22,6 @@
     margin:50px;
    }
 
+   .flex justify-center{
+    flex-direction: start;
+   }

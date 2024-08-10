@@ -9,4 +9,10 @@
     justify-content: center;
     align-items: center;
 }
-
+/* h6{
+ text-size-adjust: 20%;
+} */
+.body{
+  /* background-color: aquamarine; */
+  margin-top: 20px;
+}

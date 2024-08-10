@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-    margin:20px;
-    padding:5px;
+  margin:5px;
   }
 
 .col-span-3{
@@ -12,14 +11,21 @@
   }
 
 .mb-4 {
-    border: 2px solid;
+    border: 1px ;
+    background-color: whitesmoke;
+    box-shadow: inset;
+    border-radius: 20px;
     padding:10px;
-    /* margin: 10px; */
+    margin: 10px;
   }
 
   .mb-5{
     padding: 10px;
-    border: 2px solid;
+    border: 1px ;
+    background-color: whitesmoke;
+    box-shadow: inset;
+    border-radius: 20px;
+    margin: 10px;
   }
 
 .experience{

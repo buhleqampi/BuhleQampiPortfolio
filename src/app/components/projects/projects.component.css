@@ -1,7 +1,10 @@
 .projects-text{
     display: flex;
-    flex-direction: start;
-  }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
 
 .projects{
     display: flex;

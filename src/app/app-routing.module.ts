@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { AppComponent } from './app.component';
+
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResumeComponent } from './components/resume/resume.component';
@@ -9,12 +11,12 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TechstackComponent } from './components/techstack/techstack.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { AppComponent } from './app.component';
+
 
 
 const routes: Routes = [
-  {path: '', redirectTo:'app' , pathMatch: 'full'},
-  {path : 'app', component: AppComponent},
+  {path: '', redirectTo:'' , pathMatch: 'full'},
+  {path : '', component: AppComponent},
   {path : 'home', component: HomeComponent},
   {path : 'about', component: AboutComponent},
   {path : 'resume', component: ResumeComponent},
