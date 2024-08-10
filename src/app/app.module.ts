@@ -12,6 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { TechstackComponent } from './components/techstack/techstack.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DarkmodeComponent } from './components/darkmode/darkmode.component';
 
 
 
@@ -26,7 +27,8 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     TechstackComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    DarkmodeComponent
  
   ],
   imports: [
