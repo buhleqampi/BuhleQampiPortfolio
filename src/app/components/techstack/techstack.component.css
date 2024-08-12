@@ -23,7 +23,9 @@ svg {
   fill: currentColor;
   width: 40px;
   height: 40px;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
