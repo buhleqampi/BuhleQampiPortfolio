@@ -43,4 +43,18 @@
       }
     }
 
+    @media (max-width:378px){
+      .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 200px;
+        padding: 50px;
+       }
+    
+       .text{
+        margin:50px;
+       }
+    
+    }
+
   

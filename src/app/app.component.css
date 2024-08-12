@@ -30,6 +30,13 @@
   border-radius: 50%;
 } */
 
+*{
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 20px;
+
+}
+
 
 
 
