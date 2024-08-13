@@ -1,35 +1,34 @@
 .icons {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  gap: 5px;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  grid-template-rows: repeat(5, 1fr);   /* 5 rows */
+  gap: 2px; /* Reduce gap between items */
+  justify-content: center;
   align-items: center;
   margin: 100px;
-  border: 1px solid grey;
+  border: 2px solid grey; /* Outer border */
   border-radius: 20px;
-  padding: 20px;
+  padding: 5px;
+  width: 500px; /* Ensures the grid fits tightly */
+  height: 225px; /* Ensures the grid fits tightly */
 }
 
 .icon-item {
-  flex-direction: column;
+  display: flex;
   align-items: center;
+  justify-content: center; /* Center items within the grid cell */
   border: 1px solid grey;
   border-radius: 20px;
-  padding: 10px;
-  margin: 10px;
-  
+  padding: 5px;
 }
 
 svg {
   fill: currentColor;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 40px; /* Fill the grid cell */
+  height: 60px; /* Fill the grid cell */
 }
 
-svg:hover{
+svg:hover {
   color: aquamarine;
 }
 
@@ -38,4 +37,9 @@ p {
   font-size: 14px;
 }
 
-
+.icon-item img,
+.icon-item svg {
+  width: 40px; /* Fill the grid cell */
+  height: 40px; /* Fill the grid cell */
+  object-fit: cover; /* Ensure images are not stretched */
+}
