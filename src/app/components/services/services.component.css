@@ -9,11 +9,30 @@
     justify-content: center;
     align-items: center;
 }
-/* h6{
- text-size-adjust: 20%;
-} */
+
 .body{
   background-color: #E6FEEE;
   margin-top: 20px;
 }
 
+#api{
+  width: 200px;
+}
+
+@media (max-width:378px){ 
+  .services{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .services-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+}
