@@ -1,53 +1,79 @@
-<!--Projects section-->
 <div class="body">
-<div class="projects-text">
-        <h1 class="text-5xl font-extrabold dark:text-black mx-28 p-10">Projects<small class="ms-2 font-semibold text-gray-500 dark:text-gray-400">a developers catalog.</small></h1>
-        </div>
+    <div class="projects-text">
+      <h1 class="text-5xl font-extrabold dark:text-black mx-28 p-10">
+        Projects
+        <small class="ms-2 font-semibold text-gray-500 dark:text-gray-400">
+          a developers catalog.
+        </small>
+      </h1>
+    </div>
     <div class="projects grid gap-10">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg" id="shukuma" src="../../../assets/Screenshot 2024-08-08 161905.png" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Shukuma (PWA)</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                <span class="flex flex-initial justify-start space-x-4">
-                    <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Live</button>
-                    <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">GitHub</button>
-              </span> 
+      <!-- Shukuma Project Card -->
+      <div class="card">
+        <input type="checkbox" id="card1" class="more" aria-hidden="true" />
+        <div class="content">
+          <div class="front rounded-t-lg" style="background-image: url('../../../assets/Screenshot 2024-08-08 161905.png')">
+            <div class="inner">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Shukuma (PWA)</h5>
+              <label for="card1" class="button" aria-hidden="true">
+                Details
+              </label>
             </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                This application is a delivery management tool called Shukuma, that allows customers to view and purchase products. Allows a business to track down its orders and keep analytics. And also entails a driver side, where a record of orders is kept and a driver can be assigned.
+              </p>
+              <span class="flex flex-initial justify-start space-x-4">
+                <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Live
+                </button>
+                <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  GitHub
+                </button>
+              </span>
+              <label for="card1" class="button return" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+              </label>
+            </div>
+          </div>
         </div>
-    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg" src="../../../assets/Screenshot 2024-08-08 151607.png" alt="" />
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CookBook API</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <span class="flex flex-initial justify-start space-x-4">
-            <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Live</button>
-            <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">GitHub</button>
-      </span> 
+      </div>
+  
+      <!-- CookBook API Project Card -->
+      <div class="card">
+        <input type="checkbox" id="card2" class="more" aria-hidden="true" />
+        <div class="content">
+          <div class="front" style="background-image: url('../../../assets/Screenshot 2024-08-08 151607.png')">
+            <div class="inner">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CookBook API</h5>
+              <label for="card2" class="button" aria-hidden="true">
+                Details
+              </label>
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                This is a digital cookbook created for the sole purpose to manage recipes digitally. The user can store recipes, add recipes, sort recipes, filter recipes and also has a text-to-speech feature that makes the user experience much easier.
+              </p>
+              <span class="flex flex-initial justify-start space-x-4">
+                <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Live
+                </button>
+                <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  GitHub
+                </button>
+              </span>
+              <label for="card2" class="button return" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg" src="../../../assets/Screenshot 2024-08-08 151607.png" alt="" />
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Student Management</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <span class="flex flex-initial  space-x-4  justify-start">
-            <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Live</button>
-            <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">GitHub</button>
-      </span> 
-    </div>
-</div>
-</div>
-</div>
+  </div>
+  
+  

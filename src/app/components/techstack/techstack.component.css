@@ -1,45 +1,68 @@
 .icons {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 columns */
-  grid-template-rows: repeat(5, 1fr);   /* 5 rows */
-  gap: 2px; /* Reduce gap between items */
-  justify-content: center;
-  align-items: center;
-  margin: 100px;
-  /* border: 2px solid grey; */
-  border-radius: 20px;
-  padding: 5px;
-  width: 500px; /* Ensures the grid fits tightly */
-  height: 225px; /* Ensures the grid fits tightly */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);  
+  justify-content: center; 
+  align-items: center; 
+  gap: 5px; 
+  width: 100%; 
+  height: auto; 
+  padding: 5px; 
+  max-width: 800px; 
+  margin: 0 auto; 
 }
 
-.icon-item {
+ .icon-item svg {
+  width: 50px; 
+  height: 50px; 
+  object-fit: contain; 
   display: flex;
   align-items: center;
-  justify-content: center; /* Center items within the grid cell */
-  border: 1px solid grey;
-  border-radius: 20px;
+  justify-content: center; 
   padding: 5px;
+  margin: 0;
 }
+
 
 svg {
   fill: currentColor;
-  width: 40px; /* Fill the grid cell */
-  height: 60px; /* Fill the grid cell */
+  margin-left: 5px;
+
 }
 
-svg:hover {
-  color: aquamarine;
+.rotate-center {
+  display: inline-block;
 }
 
-p {
-  margin-top: 5px;
-  font-size: 14px;
+.rotate-center:hover {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
 }
 
-.icon-item img,
-.icon-item svg {
-  width: 40px; /* Fill the grid cell */
-  height: 40px; /* Fill the grid cell */
-  object-fit: cover; /* Ensure images are not stretched */
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width:378px){
+  .work-text{
+    display: inline;
+  }
 }
