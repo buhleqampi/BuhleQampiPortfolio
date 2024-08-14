@@ -24,6 +24,11 @@ img{
   justify-content: center;
 }
 
+svg{
+  width:20px;
+  height:20px;
+}
+
 @media (max-width: 378px){
 
   .about-info{
@@ -50,3 +55,6 @@ img{
 
 }
 
+@media (max-width:668px){
+
+}
