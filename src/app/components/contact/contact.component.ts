@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ContactService } from '../../services/contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -20,9 +21,10 @@ export class ContactComponent {
   onSubmit() {
     if (this.contactForm.valid) {
       console.log('Form Submitted', this.contactForm.value);
-      // You can also add additional logic to handle form submission here
+
     } else {
       console.log('Form is invalid');
     }
   }
 }
+
