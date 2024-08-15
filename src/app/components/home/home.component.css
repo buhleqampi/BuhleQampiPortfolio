@@ -80,7 +80,19 @@
 
  
           
-    @media(max-width:668px){
+    @media(max-width:640px){
+
+      .container {
+        display: flex;
+        margin-top: 100px;
+        padding: 20px;
+        margin:5px;
+       }
+    
+      image{
+        margin: 5px;
+        width: 80px;
+       }
 
     }
         
