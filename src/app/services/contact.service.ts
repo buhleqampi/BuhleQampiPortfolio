@@ -1,21 +1,20 @@
 import { Injectable } from '@angular/core';
-import { Contact } from './../interfaces/contact';
+import { Contact } from './../interfaces/contact'
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactService {
-
   private baseUrl = 'https://buhle-qampi-portfolio-api.vercel.app/';
 
 
-  constructor(private _http: HttpClient) { }
+  constructor(private _http: HttpClient) {}
 
-  
-  getAllProducts(): Observable<Contact> {
-    return this._http.get<Contact>(`${this.baseUrl}/articles`);
+  sendMessage(data: Contact): Observable<Contact> {
+    // const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    return this._http.post<Contact>(`${this.baseUrl}/email/send-message`, data);
   }
 }
 

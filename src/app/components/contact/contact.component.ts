@@ -1,16 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ContactService } from '../../services/contact.service';
+import { Contact } from '../../interfaces/contact';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
   contactForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(
+    private formBuilder: FormBuilder,
+    private contactService: ContactService
+  ) {
     this.contactForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
       subject: ['', Validators.required],
@@ -18,13 +22,23 @@ export class ContactComponent {
     });
   }
 
-  onSubmit() {
-    if (this.contactForm.valid) {
-      console.log('Form Submitted', this.contactForm.value);
+  ngOnInit(): void {}
 
-    } else {
-      console.log('Form is invalid');
-    }
+  onSubmit() {
+    // if (this.contactForm.valid) {
+    //   const contactData: Contact = this.contactForm.value;
+    //   this.contactService.sendMessage(contactData).subscribe({
+    //     next: (response) => {
+          console.log('Message sent successfully');
+    //       this.contactForm.reset();
+    //     },
+    //     error: (error) => {
+    //       console.error('Error sending message', error);
+    //     }
+    //   });
+    // } else {
+    //   console.log('Form is invalid');
+    // }
   }
 }
 
