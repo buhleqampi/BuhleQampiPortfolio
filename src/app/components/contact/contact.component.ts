@@ -25,20 +25,20 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit() {
-    // if (this.contactForm.valid) {
-    //   const contactData: Contact = this.contactForm.value;
-    //   this.contactService.sendMessage(contactData).subscribe({
-    //     next: (response) => {
+    if (this.contactForm.valid) {
+      const contactData: Contact = this.contactForm.value;
+      this.contactService.sendMessage(contactData).subscribe({
+        next: (response) => {
           console.log('Message sent successfully');
-    //       this.contactForm.reset();
-    //     },
-    //     error: (error) => {
-    //       console.error('Error sending message', error);
-    //     }
-    //   });
-    // } else {
-    //   console.log('Form is invalid');
-    // }
+          this.contactForm.reset();
+        },
+        error: (error) => {
+          console.error('Error sending message', error);
+        }
+      });
+    } else {
+      console.log('Form is invalid');
+    }
   }
 }
 

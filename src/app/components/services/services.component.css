@@ -36,6 +36,8 @@
 }
 
 @media (min-width:640px){
-
+ img{
+  width: 120px;
+ }
 
   }
