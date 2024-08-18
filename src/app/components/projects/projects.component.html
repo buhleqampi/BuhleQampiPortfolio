@@ -7,73 +7,64 @@
         </small>
       </h1>
     </div>
-    <div class="projects grid gap-10">
-      <!-- Shukuma Project Card -->
-      <div class="card">
-        <input type="checkbox" id="card1" class="more" aria-hidden="true" />
-        <div class="content">
-          <div class="front rounded-t-lg" style="background-image: url('../../../assets/Screenshot 2024-08-08 161905.png')">
-            <div class="inner">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Shukuma (PWA)</h5>
-              <label for="card1" class="button" aria-hidden="true">
-                Details
-              </label>
-            </div>
-          </div>
-          <div class="back">
-            <div class="inner">
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                This application is a delivery management tool called Shukuma, that allows customers to view and purchase products. Allows a business to track down its orders and keep analytics. And also entails a driver side, where a record of orders is kept and a driver can be assigned.
+    <div class="projects flex flex-wrap justify-center">
+      <div class="max-w-sm flex flex-col bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700 m-10">
+          <a href="#">
+              <img class="rounded-t-lg m-10" src="../../../assets/ecommerce-website-commerce-and-shopping.svg" alt="" />
+          </a>
+          <div class="p-5 pt-0 flex-grow">
+              <a href="#">
+                  <h6 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Shukuma (PWA)</h6>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">  
+                  This application is a delivery management tool called Shukuma, that allows customers to view and purchase products. 
+                  <span *ngIf="showDots">...</span>
+                  <span *ngIf="!showDots">Allows a business to track down its orders and keep analytics. And also entails a driver side, where a record of orders is kept and a driver can be assigned.</span>
               </p>
-              <span class="flex flex-initial justify-start space-x-4">
-                <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                  Live
-                </button>
-                <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                  GitHub
-                </button>
-              </span>
-              <label for="card1" class="button return" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-              </label>
-            </div>
+              <button (click)="toggleText()" class="text-blue-500">
+                  {{ showDots ? 'Read more' : 'Read less' }}
+              </button>
           </div>
-        </div>
       </div>
+      <!-- Repeat the same structure for the other cards -->
+      <div class="max-w-sm flex flex-col bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700 m-10">
+          <a href="#">
+              <img class="rounded-t-lg m-10" src="../../../assets/cookbook.svg" alt="" />
+          </a>
+          <div class="p-5 pt-0 flex-grow">
+              <a href="#">
+                  <h6 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Digital CookBook</h6>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">  
+                  This is a digital cookbook created for the sole purpose to manage recipes digitally.
+                  <span *ngIf="showDots">...</span>
+                  <span *ngIf="!showDots">The user can store recipes, add recipes, sort recipes, filter recipes and also has a text-to-speech feature that makes the user experience much easier.</span>
+              </p>
+              <button (click)="toggleText()" class="text-blue-500">
+                  {{ showDots ? 'Read more' : 'Read less' }}
+              </button>
+          </div>
+      </div>
+      <div class="max-w-sm flex flex-col bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700 m-10">
+          <a href="#">
+              <img class="rounded-t-lg m-10" src="../../../assets/rocket-launch.svg" alt="" />
+          </a>
+          <div class="p-5 pt-0 flex-grow">
+              <a href="#">
+                  <h6 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Student Management</h6>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  This is a student management platform whereby there is a record management.
+                  <span *ngIf="showDots">...</span>
+                  <span *ngIf="!showDots">The educator can add students, update their details, and delete records. It also has features for analytics and statistics of the record management. (In Production)</span>
+              </p>
+              <button (click)="toggleText()" class="text-blue-500">
+                  {{ showDots ? 'Read more' : 'Read less' }}
+              </button>
+          </div>
+      </div>
+  </div>
   
-      <!-- CookBook API Project Card -->
-      <div class="card">
-        <input type="checkbox" id="card2" class="more" aria-hidden="true" />
-        <div class="content">
-          <div class="front" style="background-image: url('../../../assets/Screenshot 2024-08-08 151607.png')">
-            <div class="inner">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CookBook API</h5>
-              <label for="card2" class="button" aria-hidden="true">
-                Details
-              </label>
-            </div>
-          </div>
-          <div class="back">
-            <div class="inner">
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                This is a digital cookbook created for the sole purpose to manage recipes digitally. The user can store recipes, add recipes, sort recipes, filter recipes and also has a text-to-speech feature that makes the user experience much easier.
-              </p>
-              <span class="flex flex-initial justify-start space-x-4">
-                <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                  Live
-                </button>
-                <button type="button" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                  GitHub
-                </button>
-              </span>
-              <label for="card2" class="button return" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
   
   

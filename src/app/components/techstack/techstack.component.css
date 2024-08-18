@@ -63,6 +63,36 @@ svg {
 
 @media (max-width:378px){
   .work-text{
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    padding:2px;
+    margin: 10px;
+  }
+}
+
+@media (min-width:640px){
+  .work-text{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    padding:2px;
+    margin: 10px;
+  }
+}
+
+@media (min-width:1028px){
+  .work-text{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    padding:2px;
+    margin: 10px;
   }
 }

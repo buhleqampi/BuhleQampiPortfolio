@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+  showDots: boolean = true;
+
+  toggleText(): void {
+    this.showDots = !this.showDots;
+  }
 }
