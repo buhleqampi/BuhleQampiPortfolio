@@ -75,6 +75,11 @@
         margin: 5px;
         width: 100px;
        }
+
+       .flex{
+        display: flex;
+        flex-wrap: wrap;
+       }
     
     }
 

@@ -52,6 +52,7 @@
   .front {
     background-size: cover;
     background-position: center;
+  
   }
   
   .back {
@@ -67,4 +68,9 @@
     padding: 20px;
   }
   
-  
+  @media (max-width:378px){
+    .projects{
+      display: flex;
+      flex-direction: column;
+    }
+  }
