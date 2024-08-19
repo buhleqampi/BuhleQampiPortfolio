@@ -12,7 +12,7 @@ module.exports = {
 
   screens: {
     'smartphone': '378px',
-    // => @media (max-width:378px) { ......}
+    // => @media (min-width:378px) { ......}
     
     'tablet': '640px',
     // => @media (min-width: 640px) { ... }

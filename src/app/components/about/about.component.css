@@ -30,7 +30,12 @@ svg{
   fill: currentColor;
 }
 
-@media (max-width: 378px){
+svg:hover{
+  color: black;
+}
+
+
+@media (min-width: 378px){
 
   .about-info{
     display: flex;

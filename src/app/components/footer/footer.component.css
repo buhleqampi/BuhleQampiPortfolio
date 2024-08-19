@@ -3,3 +3,8 @@ svg{
     height:20px;
     fill: currentColor;  
 }
+
+svg:hover{
+    color: black;
+  }
+  

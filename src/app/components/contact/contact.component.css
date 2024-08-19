@@ -48,7 +48,7 @@
   }
 }
 
-@media (max-width:378px){
+@media (min-width:378px){
   .bg-white{
     padding: 20px;
   }
@@ -56,10 +56,20 @@
     
   .contact-text{
     display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* margin: 10px; */
+  }
+
+  .text-5xl{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding:2px;
     margin: 10px;
+
   }
 }
 

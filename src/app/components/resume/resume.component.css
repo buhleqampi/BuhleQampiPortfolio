@@ -44,7 +44,7 @@
     margin-bottom: 0.5em; 
   }
 
-  @media (max-width:378px) {
+  @media (min-width:378px) {
     .work-text{
       display: flex;
       flex-direction: column;
@@ -68,5 +68,23 @@
       justify-content: center;
       padding:2px;
       margin: 10px;
+    }
+
+    .experience{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle-list{
+      text-size-adjust: 300px;
+    }
+  
+  }
+
+  @media (min-width:640px){
+    
+    .relative{
+      margin: 40px;
     }
   }

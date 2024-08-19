@@ -61,11 +61,17 @@ svg {
   }
 }
 
-@media (max-width:378px){
+@media (min-width:378px){
   .work-text{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .text-3xl{
+    display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     padding:2px;
@@ -76,7 +82,7 @@ svg {
 @media (min-width:640px){
   .work-text{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
