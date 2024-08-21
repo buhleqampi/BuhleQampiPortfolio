@@ -44,6 +44,14 @@
     margin-bottom: 0.5em; 
   }
 
+  
+  @media (min-width:640px){
+    
+    .relative{
+      margin: 40px;
+    }
+  }
+
   @media (min-width:378px) {
     .work-text{
       display: flex;
@@ -80,11 +88,4 @@
       text-size-adjust: 300px;
     }
   
-  }
-
-  @media (min-width:640px){
-    
-    .relative{
-      margin: 40px;
-    }
   }
