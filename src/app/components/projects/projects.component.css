@@ -1,4 +1,6 @@
- .body{
+ @media(min-width:1024px){
+
+  .body{
     background-color: #E6FEEE;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -39,7 +41,7 @@
       fill: currentColor;
     }
     
- 
+ }
 
   @media (min-width:378px){
     .projects{

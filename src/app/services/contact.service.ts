@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ContactService {
-  private baseUrl = 'https://buhle-qampi-portfolio-api.vercel.app/';
+  private baseUrl = 'https://buhle-qampi-portfolio-api.vercel.app';
 
 
   constructor(private _http: HttpClient) {}
