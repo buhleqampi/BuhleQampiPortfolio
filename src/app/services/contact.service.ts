@@ -13,7 +13,6 @@ export class ContactService {
   constructor(private _http: HttpClient) {}
 
   sendMessage(data: Contact): Observable<Contact> {
-    // const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     return this._http.post<Contact>(`${this.baseUrl}/email/send-message`, data);
   }
 }

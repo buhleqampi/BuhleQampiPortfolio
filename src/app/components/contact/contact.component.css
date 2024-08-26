@@ -48,6 +48,15 @@
   }
 }
 
+@media (min-width:640px){
+
+  .bg-white{
+    padding: 50px;
+    margin: 30px;
+  }
+
+
+}
 @media (min-width:378px){
   .bg-white{
     padding: 20px;

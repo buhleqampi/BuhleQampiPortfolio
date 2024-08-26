@@ -7,28 +7,31 @@ nav .max-w-screen-xl {
   nav .flex.md\\:order-2 {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Align buttons to the end */
+    justify-content: flex-end; 
   }
   
   nav .space-x-3 {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align logo and name to the start */
+    justify-content: flex-start; 
   }
   
   nav .items-center ul {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Align navigation links to the end */
+    justify-content: flex-end; 
   }
 
-  /* Example styles for mobile menu */
-#mobile-menu {
-    display: none; /* Hidden by default */
-  }
+
   
-  #mobile-menu.open {
-    display: block; /* Show when menu is open */
+  @media(min-width:640px){
+
+    #mobile-menu {
+      display: none; 
+    }
+
+    #mobile-menu.open {
+      display: block;
+    }
   }
-  
   

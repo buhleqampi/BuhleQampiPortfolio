@@ -4,6 +4,7 @@
     background-color: #E6FEEE;
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 100vw;
   } 
 
   .projects-text{
@@ -14,18 +15,42 @@
     padding: 30px;
 }
 
-.projects{
+  .projects{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; 
     justify-content: center;
+    gap: 40px;
+    margin: 10px auto; 
+  }
+
+  .max-w-sm img{
+    width: 100px; 
+    height: auto;
+    margin-bottom: 20px; 
+  }
+
+  .max-w-sm {
+    border: 1px solid white;   
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: white;
+    max-width: 480px; /* Fixed width for all cards */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
-}
-
-
-    img{
+    padding: 20px;
+    box-sizing: border-box;
+  }
+    /* img{
       width: 100px;
-    }
+    } */
+
+      
+  .projects .max-w-sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+  }
 
     #dots {
       display: inline;
@@ -43,14 +68,60 @@
     
  }
 
+ @media(min-width:640px){
+
+  .body{
+    background-color: #E6FEEE;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  } 
+
+  /* .projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+} */
+
+    img{
+      width: 100px;
+    }
+
+
+  svg{
+    width:20px;
+    height:20px;
+    fill: currentColor;
+  }
+ }
+
+
   @media (min-width:378px){
+
+    .body{
+      background-color: #E6FEEE;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    } 
+  
     .projects{
       display: flex;
-      /* flex-direction: column; */
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-         }
+      margin-bottom: 40px;
+  }
+      img{
+        width: 100px;
+      }
 
+
+    svg{
+      width:20px;
+      height:20px;
+      fill: currentColor;
+    }
     .flex{
       display: flex;
       justify-content: center;
@@ -58,29 +129,29 @@
       margin-bottom: 50px;
           }
     
-          .projects-text{
-            display: flex;
-            /* flex-direction: column; */
-            align-items: center;
-            justify-content: center;
-            /* margin: 10px; */
-          }
-        
-          .text-5xl{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding:2px;
-            margin: 10px;
-        
-          }
+    .projects-text{
+      display: flex;
+      /* flex-direction: column; */
+      align-items: center;
+      justify-content: center;
+      /* margin: 10px; */
+    }
+  
+    .text-5xl{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding:2px;
+      margin: 10px;
+  
+    }
 
-          .ms-2{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 60px;
-          }
+    .ms-2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 60px;
+    }
 
         }

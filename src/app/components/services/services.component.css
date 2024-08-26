@@ -1,72 +1,123 @@
 @media(min-width:1024px){
 
+  .body{
+    background-color: #E6FEEE;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100vw;
+  }
+
   .services-text{
     display: flex;
-    flex-direction: start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
   }
 
 .services{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; 
     justify-content: center;
-    align-items: center;
+    gap: 40px;
+    margin: 10px auto; 
+  }
+
+    .max-w-sm img{
+      width: 100px; 
+      height: auto;
+      margin-bottom: 20px; 
+    }
+
+.max-w-sm {
+  border: 1px solid white;   
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  background-color: white;
+  width: 400px; /* Fixed width for all cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.body{
-  background-color: #E6FEEE;
-  margin-top: 20px;
+.services .max-w-sm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
 }
-
-#api{
-  width: 200px;
-}
+    /* 
+    #api{
+      width: 200px;
+    } */
 }
 
 
 @media (min-width:640px){
+
+  .body{
+    background-color: #E6FEEE;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  } 
+
+  .services-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+    margin: 20px;
+          }
+      
     img{
-        width: 100px;
-        }
-
-      .services{
-          display: flex;
-          /* flex-wrap: wrap; */
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-           }
-        
-      h1{
-      display: flex;
-      flex-direction: start;
+    width: 100px;
     }
 
-    .p-5{
-      padding-top: 0;
-    }
+    h1{
+    display: flex;
+    flex-direction: start;
+  }
+
+  .p-5{
+    padding-top: 0;
+  }
   }
 
   @media (min-width:378px){ 
-    .services{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  
+      .body{
+        background-color: #E6FEEE;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
 
-    .services-text{
+      .services-text{
         display: flex;
-        justify-content: center;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
+        padding: 30px;
       }
-
-      h1{
-        display: flex;
-        flex-direction: start;
-      }
-
+    
       img{
         width: 100px;
       }
+
+      .services{
+        margin-bottom: 40px;
+      }
+
+   
   }
   

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  titles: string[] = ['Junior Software Engineer', 'Full Stack Web Developer'];
+  titles: string[] = ['Junior Software Developer', 'Full Stack Web Developer'];
   currentTitleIndex: number = 0;
   currentTitle: string = this.titles[this.currentTitleIndex];
 
