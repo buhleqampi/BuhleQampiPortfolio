@@ -21,17 +21,63 @@ nav .max-w-screen-xl {
     align-items: center;
     justify-content: flex-end; 
   }
+/* #navbar-sticky {
+  display: none; 
+}
 
 
-  
-  @media(min-width:640px){
+#navbar-sticky.block {
+  display: inline-block;
+}
 
-    #mobile-menu {
-      display: none; 
-    }
 
-    #mobile-menu.open {
-      display: block;
-    }
+@media (min-width: 768px) {
+  #navbar-sticky {
+    display: flex; 
   }
+} */
+
+/* Modal background styling */
+.fixed.inset-0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal container styling */
+.bg-white.dark\:bg-gray-800.rounded-lg.shadow-lg.p-6 {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 20rem;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nav links styling */
+.flex.flex-col.items-center.justify-center.space-y-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Space between items */
+}
+
+/* Close button ("X") styling */
+.self-end {
+  align-self: flex-end;
+}
+
+button:hover, button:focus {
+  color: #3b82f6; /* Hover and focus effect for button */
+}
+
+.dark .text-gray-900.dark\:text-white {
+  color: #fff; /* Text color in dark mode */
+}
+
   
