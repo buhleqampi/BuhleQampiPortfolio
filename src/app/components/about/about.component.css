@@ -1,3 +1,11 @@
+.mb-3{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important ;
+  /* font-weight: 200 !important; */
+  line-height: 25px;
+  font-size: medium;
+}
+
+
 @media (min-width:1024px){
 
 .about-text{
@@ -75,6 +83,17 @@ svg:hover{
     margin-top:30px;
    }
 
+   
+  svg{
+    width:20px;
+    height:20px;
+    fill: currentColor;
+  }
+
+  svg:hover{
+    color: black;
+  }
+
 }
 
 @media (min-width: 378px){
@@ -101,6 +120,16 @@ svg:hover{
     margin: 2px;
    }
    
+   
+  svg{
+    width:20px;
+    height:20px;
+    fill: currentColor;
+  }
+
+  svg:hover{
+    color: black;
+  }
 
 }
 

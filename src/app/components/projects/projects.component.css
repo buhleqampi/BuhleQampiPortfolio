@@ -1,4 +1,11 @@
- @media(min-width:1024px){
+.mb-3{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important ;
+  /* font-weight: 200 !important; */
+  line-height: 25px;
+  font-size: medium;
+}
+
+@media(min-width:1024px){
 
   .body{
     background-color: #E6FEEE;
