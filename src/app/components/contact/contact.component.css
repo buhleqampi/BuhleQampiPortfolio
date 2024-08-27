@@ -55,6 +55,12 @@ placeholder{
   font-size: medium;
 }
 
+.text-5xl{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 @media (min-width:640px){
 
   .bg-white{

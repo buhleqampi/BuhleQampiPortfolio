@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: center;
   margin:5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
   }
 
 .col-span-3{
@@ -16,10 +20,10 @@
     box-shadow: inset;
     border-radius: 10px;
     margin: 10px;
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important ;
-      /* font-weight: 200 !important; */
-      line-height: 25px;
-      font-size: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important ;
+    /* font-weight: 200 !important; */
+    line-height: 25px;
+    font-size: medium;
   }
 
   .mb-5{
@@ -29,16 +33,20 @@
     box-shadow: inset;
     border-radius: 10px;
     margin: 10px;
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important ;
-      /* font-weight: 200 !important; */
-      line-height: 25px;
-      font-size: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important ;
+    /* font-weight: 200 !important; */
+    line-height: 25px;
+    font-size: medium;
   }
 
 .experience{
     display: flex;
     flex-direction: start;
     align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    
   }
 
   .circle-list {

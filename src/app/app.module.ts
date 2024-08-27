@@ -16,6 +16,8 @@ import { TechstackComponent } from './components/techstack/techstack.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DarkmodeComponent } from './components/darkmode/darkmode.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
@@ -31,7 +33,9 @@ import { DarkmodeComponent } from './components/darkmode/darkmode.component';
     TechstackComponent,
     ProjectsComponent,
     FooterComponent,
-    DarkmodeComponent
+    DarkmodeComponent,
+    NotfoundComponent,
+    PortfolioComponent
  
   ],
   imports: [
