@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { initFlowbite } from 'flowbite';
-import { inject } from "@vercel/analytics"
+
 
 @Component({
   selector: 'app-root',
